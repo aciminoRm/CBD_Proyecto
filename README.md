@@ -46,7 +46,7 @@ $ gcloud dataproc clusters create example-cluster --region europe-west6 --master
    3. Rellena la información del bucket information y click CONTINUE
    4. Click CREATE
    5. Sube los archivos que deseas ejecutar en el Bucket
-3. ** Enviar el trabajo de Spark desde Cloud Shell **
+3. **Enviar el trabajo de Spark desde Cloud Shell**
    ```
    BUCKET=gs://<YOUR_BUCKET_NAME>
    gcloud dataproc jobs submit pyspark --cluster example-cluster --region=europe-west6 $BUCKET/wordcount.py
